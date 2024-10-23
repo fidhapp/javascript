@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.firstContainer{
+    /* border: 2px solid red; */
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.firstBox{
+    border: 2px solid yellow;
+    height: 600px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.card1{
+    /* border: 2px solid yellow; */
+    height: 98%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card2{
+    border: 2px solid rgba(172, 172, 0, 0.614);
+    height: 98%;
+    width: 65%;
+}
+.boxes{
+    border: 2px solid rgba(172, 172, 0, 0.614);
+    height: 23%;
+    width: 100%;
+}
+.boxes img{
+    height: 100%;
+    width: 100%;
+}
+.card2 img{
+    height: 100%;
+    width: 100%;
+}

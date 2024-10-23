@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="frmbdr">
+            <h1>OTP Verification</h1>
+            <p>Your OTP: <span id="generatedOtp"></span></p>
+
+            <form action="#" class="frm" onsubmit="return validateOtp(event)">
+                <div id="otpError" class="error"></div>
+
+                <label for="enteredOtp">Enter OTP: </label>
+                <input type="text" name="enteredOtp" id="enteredOtp" placeholder="Enter OTP" required>
+
+                <button id="btn2" type="submit">Verify OTP</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("generatedOtp").innerText = localStorage.getItem("otp");
+    </script>
+</body>
+</html>

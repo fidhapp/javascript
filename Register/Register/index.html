@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="frmbdr">
+                <form action="#" class="frm" onsubmit="return submitForm(event)">
+                    <h1>REGISTRATION FORM</h1>
+                    <div id="formErrorr" class="error"></div>
+                    
+                    <div class="card">
+                        <label for="firstname">FirstName: </label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    
+                    <div class="card">
+                        <label for="lastname">LastName: </label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+    
+                    <div class="card">
+                        <label for="mobile">Mobile Number: </label>
+                        <input type="tel" name="mob" id="mob">
+                    </div>
+    
+                    <div class="card">
+                        <label for="email">E-Mail: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
+    
+                    <div class="card">
+                        <label for="pswd">Password: </label>
+                        <input type="password" name="pswd" id="pswd">
+                    </div>
+    
+                    <div class="card">
+                        <label for="cpswd">Confirm Password: </label>
+                        <input type="password" name="cpswd" id="cpswd">
+                    </div>
+                    
+                    <div class="buttons">
+                        <button id="btn" type="submit">Register</button>
+                        <button id="btn2"><a href="login.html">Login</a></button>
+                    </div>
+                    
+                </form>
+                <br>
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

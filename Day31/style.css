@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.mainBody{
+    /* border: 2px solid red; */
+    background-color: white;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navTab{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(202, 0, 0);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 80px;
+    font-size: 23px;
+}
+#filmBody{
+    padding: 20px;
+    width: 1000px;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.movie{
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px grey;
+    background-color: grey;
+    width: 23%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    /* box-shadow: 2px 2px 30px rgba(70, 69, 69, 0.144); */
+    cursor: pointer;
+}
+.img {
+    background-color: rgb(121, 109, 109);
+    height: 180px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+}
+.img img {
+    border-top-right-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.movieDescription {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(119, 123, 126);
+    padding: 15px 15px;
+}
+.movieTitle {
+    width: 95%;
+    height: 65px;
+    text-align: center;
+}
+.rYear{
+    text-align: center;
+}
+h2,h4{
+    color: white;
+}
+.searchBody {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+/* HTML: <div class="loader"></div> */
+
+.loading{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: l5 1s infinite linear alternate;
+  }
+  @keyframes l5 {
+      0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+      33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+      66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+      100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+  }

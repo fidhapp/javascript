@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navTab">
+        <div class="heading"><h1>MOVIES</h1></div>
+        <div class="searchBody">
+            <input type="text" id="search-input" placeholder="Search for movies..." onkeyup="searchMovies()">
+            <button id="search-button" onclick="searchMovies(Event)">Search</button>
+        </div>
+    </div>
+    <div class="mainBody">
+        <div id="filmBody">
+            <div class="loading">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./search.js"></script>
+</body>
+</html>
